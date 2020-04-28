@@ -4,3 +4,87 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+.logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tagLine{ 
+    position: relative;
+    padding-top: 1%;
+    text-align: center;
+    font-size: 0.85em;
+    animation:fade-out 1s ease-out both 2.5s
+  }
+  
+  .color-change-2x {
+    width: 100vw;
+    height: 100vh;
+    // color: #fff;
+    // background: linear-gradient(-45deg, #ee7752, rgb(240, 118, 165), rgb(91, 180, 212), #23d5ab);
+    // background-size: 400% 400%;
+    // animation: Gradient 15s ease infinite;
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(20);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+  @keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+  @keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+  #t1 {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.1s;
+  }
+  #h {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.2s;
+  }
+  #i {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.3s;
+  }
+  #n {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.4s;
+  }
+  #k {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
+  }
+  #t2 {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.6s;
+  }
+  #a {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.7s;
+  }
+  #c {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.8s;
+  }
+  #i-dot {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 2.1s;
+  }
+  
+  #tag1{animation:tracking-in-expand-fwd .6s cubic-bezier(.215,.61,.355,1.000) alternate both 1s}
+  #tag2{animation:tracking-in-expand-fwd .6s cubic-bezier(.215,.61,.355,1.000) alternate both 1.4s}
+  #tag3{animation:tracking-in-expand-fwd .6s cubic-bezier(.215,.61,.355,1.000) alternate both 1.8s}
+
+  #thinktacLogo{animation:fade-out 1s ease-out both 2.5s}
